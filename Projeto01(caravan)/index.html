@@ -10,19 +10,35 @@
 </head>
 
 <body>
-     <nav class="navbar navbar-expand-lg navbar-light ">
+     <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top py-3 box-shadow">
+
           <a href="index.html" class="navbar-brand">
                <img src="img/caravan.svg" alt="Caravan">
           </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-               aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+               data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+               aria-label="Abrir Navegação">
                <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-               <ul class="navbar-nav mr-auto">
-                       <li class="nav-item">
-                         <a class="nav-link" href="locais.html">Locais</a>
+
+
+          <div class="collapse navbar-collapse  " id="navbarSupportedContent">
+               <ul class="navbar-nav ms-auto">
+                    <!-- Dropdown -->
+                    <li class="nav-item dropdown">
+                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                              data-bs-toggle="dropdown" aria-expanded="false">
+                              Locais
+                         </a>
+                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="local.html">Califórnia</a></li>
+                              <li><a class="dropdown-item" href="local.html">Paris</a></li>
+                              <li><a class="dropdown-item" href="local.html">Dublin</a></li>
+                         </ul>
                     </li>
+                    <!-- Dropdown -->
                     <li class="nav-item">
                          <a class="nav-link" href="planos.html">Planos</a>
                     </li>
@@ -35,6 +51,28 @@
                </ul>
           </div>
      </nav>
+     <!-- Container principal -->
+
+     <section class="container-fluid">
+          <div class="row bg-dark text-white">
+               <div class="col-7">
+               </div>
+               <div class="col-lg-5 p-4">
+                    <h1 class="display-4">Realize a viagem do seu sonho</h1>
+                    <p class="lead">O melhor local para a sua viagem é com o Caravan, mais de 5.0000 excursões
+                         concluídas.</p>
+                    <form action="">
+                         <div class="input-group input-group-lg mb-3">
+                              <input type="text" class="form-control" placeholder="E-mail" aria-label="E-mail"
+                                   aria-describedby="basic-addon2">
+                              <span class="input-group-text-btn "><button class="btn btn-primary px-4 py-3" 
+                                        type="button ">Inscreva-se!</button></span>
+                         </div>
+                    </form>
+               </div>
+
+          </div>
+     </section>
 
      <script type="text/javascript" src="js/jsquery.js"></script>
      <script type="text/javascript" src="js/popper.min.js"></script>
